@@ -14,11 +14,15 @@
 
   - コンテナにアクセス
     ```
-    docker exec -it my-iris bash
+    docker exec -it iris_docker bash
     ```
   - コンテナ内の bash シェルで IRIS ターミナルを開始する
     ```
     iris session iris
+    ```
+  - 時刻出力
+    ```
+    w $zdt($h, 3, 1)
     ```
 
 <br/>
