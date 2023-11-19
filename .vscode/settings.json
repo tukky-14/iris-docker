@@ -3,7 +3,7 @@
     "active": true,
     "host": "localhost",
     "port": 52773,
-    "username": "_SYSTEM",
+    "username": "_system",
     "ns": "TUKKY",
     "https": false
   }

@@ -1,12 +1,14 @@
 ## Docker を使用して IRIS 環境を構築
 
-| コマンド             | 説明                                                                           |
-| -------------------- | ------------------------------------------------------------------------------ |
-| docker-compose up -d | docker-compose.yml があるファイルで実行（-d オプションでバックグラウンド実行） |
-| docker-compose ps    | 起動状態の確認                                                                 |
-| docker-compose stop  | 停止                                                                           |
-| docker-compose rm    | 削除                                                                           |
-| docker-compose down  | 停止・削除・ネットワーク削除                                                   |
+| コマンド                     | 説明                                                                           |
+| ---------------------------- | ------------------------------------------------------------------------------ |
+| docker-compose up -d         | docker-compose.yml があるファイルで実行（-d オプションでバックグラウンド実行） |
+| docker-compose restart       | 再起動（-d オプションでバックグラウンド実行時）                                |
+| docker-compose ps            | 起動状態の確認                                                                 |
+| docker-compose stop          | 停止                                                                           |
+| docker-compose rm            | 削除                                                                           |
+| docker-compose down          | 停止・削除・ネットワーク削除                                                   |
+| docker-compose up -d --build | Dockerfile の設定を反映させる                                                  |
 
 - 管理ポータル
   - http://localhost:52773/csp/sys/%25CSP.Portal.Home.zen
@@ -23,6 +25,10 @@
   - 時刻出力
     ```
     w $zdt($h, 3, 1)
+    ```
+  - マウントされたボリュームへの移動
+    ```
+    cd /usr/irissys/mgr
     ```
 
 <br/>

@@ -10,6 +10,7 @@ services:
     # Docker管理ボリュームに対してデータを保存。/path/to/local/directory:/usr/irissysとして"/"をつけてローカルディレクトリを指定するとローカルPCの見える場所にデータを保存可能。
     volumes:
       - iris-data:/usr/irissys
+    restart: always
     environment:
       #　ISC_DATA_DIRECTORY は、InterSystems IRIS で使用される環境変数の一つ
       - ISC_DATA_DIRECTORY=/usr/irissys
